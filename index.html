@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <!--now we connect html and css file-->
+    <link rel ="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5cb0895ac3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+ <div id="header">
+<div class="container">
+    <nav>
+        <img src="" class="logo">
+        <ul id="sidemenu">
+            <li><a href = "#header">Home</a></li>
+            <li><a href = "#about">About</a></li>
+          <!--  <li><a href = "#">Projects</a></li>-->
+            <li><a href = "#portfolio">Projects</a></li>
+            <li><a href = "#contact">Contact</a></li>
+            <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+        <div class="header-text">
+            <p1>Undergraduate student </p1>
+            <h1>Hi! I am <span>Parisha Aggarwal</span>, <br>student at IIT ROPAR.</h1>
+        </div>
+</div>
+ </div>
+<!-- ------------about------------------ -->
+ <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="parisha_resume.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    Third Year undergrad pursuing Electrical Engineering at Indian Institute of Technology, Ropar.<br>
+                    - Skilled in mentoring, management, and teamwork.<br> 
+                    - Strong educational background along with excelling in co-curricular activities.<br>
+                    - Always psyched up to learn new things and gain experiences.<br>
+                    - Strongly inclined towards Software Development.<br>
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('positions-of-responsibility')">Positions of Responsibility</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <!--skills-->
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Languages</span><br>C, C++</li>
+                        <li><span>Technical Skills</span><br>HTML, CSS, JavaScript, Tinkercad, Arduino, Canva</li>
+                        <li><span>Soft skills</span><br>Management, Leadership, Communication , Teamwork
+                        </li>
+                        <li><span>Other Skills</span><br>Data Structures and Algorithms, Competitive Programming, Web Development, English Speaking and Content Writing</li>
+                    </ul>
+                </div>
+                <!--positions of responsibility-->
+                <div class="tab-contents" id="positions-of-responsibility">
+                    <ul>
+                        <li><span>Co-Secretary</span><br>Institute Student Mentorship Programme (ISMP), IIT Ropar</li>
+                        <li><span>Mentor</span><br>Institute Student Mentorship Programme (ISMP), IIT Ropar</li>
+                        <li><span>Content Team Head</span><br>Society of Women Engineers(SWE), IIT Ropar</li>
+                        <li><span>Student Representative</span><br>Career Development and Placement Cell, IIT Ropar</li>
+                        <li><span>Anchor and Content team  Coordinator</span><br>Zeitgeist Annual Fest, IIT Ropar</li>
+                        <li><span>Mailing Team</span><br>Career Development and Placement Cell, IIT Ropar</li>
+                        <li><span>Design Team</span><br>AstroMag, Zenith Club, IIT Ropar</li>
+                    </ul>
+                </div>
+                <!--education-->
+                <div class="tab-contents" id="education" >
+                    <ul>
+                        <li><span>Bachelor of Technology(2021-2025)</span><br>Indian Institute of Technology, Ropar</li>
+                        <li><span>Senior Secondary(2021)</span><br>Central Board of Secondary Education(BCM Arya Model Sr. Sec.  School)</li>
+                        <li><span>Secondary(2019)</span><br>Central Board of Secondary Education(BCM Arya Model Sr. Sec.  School)</li>
+                        
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+ </div>
+
+<!--- ----------------projects--------------- -->
+   <!-- <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>project 1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur facere perspiciatis quo provident. Sequi repellat quasi dolores pariatur quo necessitatibus ipsum fugit quibusdam facere voluptatem, maiores consequuntur nisi, id veritatis!
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code-compare"></i>
+                    <h2>project 2</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur facere perspiciatis quo provident. Sequi repellat quasi dolores pariatur quo necessitatibus ipsum fugit quibusdam facere voluptatem, maiores consequuntur nisi, id veritatis!
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-camera"></i>
+                    <h2>project 3</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur facere perspiciatis quo provident. Sequi repellat quasi dolores pariatur quo necessitatibus ipsum fugit quibusdam facere voluptatem, maiores consequuntur nisi, id veritatis!
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>-->
+
+<!--  -------------portfolio------------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="F:\projects\portfolio\sudoku.png">
+                <div class="layer">
+                    <h3>Sudoku Solver</h3>
+                    <p>The 9x9 grid called Sudoku is solved automatically when the user fills the board with valid numbers.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="F:\projects\portfolio\tictactoe.png">
+                <div class="layer">
+                    <h3>Tic Tac Toe</h3>
+                    <p>It's a real time game.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="F:\projects\portfolio\camera.jpg">
+                <div class="layer">
+                    <h3>Smart Door Peep hole camera</h3>
+                    <p>A security camera that’ll provide surveillance via live streaming and face recognition system through the same.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <a href="" class="btn" >See More</a>
+    </div>
+</div>
+<!-- -----------contact-------------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i>2021eeb1049@iitrpr.ac.in</p>
+                <p><i class="fa-sharp fa-solid fa-phone"></i>6280542411</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/parisha-aggarwal-486786227/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="" download class="btn btn2">Download CV</a><!--add your cv here in href-->
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="end">
+        <p>                                 </p>
+    </div>
+</div>
+ <script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    /*we will define function opentab that we wrote above*/
+    function opentab(tabname)
+    {
+        for(tablink of tablinks)
+        {
+            tablink.classList.remove("active-link");//to disappear color on link
+        }
+        for(tabcontent of tabcontents)
+        {
+            tabcontent.classList.remove("active-tab");//to disappear content
+        }
+        event.currentTarget.classList.add("active-link");//to dispaly color on clicking
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+ </script>
+ <script>
+    var sidemeu= document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right="0";
+    }
+    function closemenu(){
+        sidemeu.style.right="-200px";
+    }
+ </script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyX-aVZL7558MdtdKx2ZP_X1rkD5zSikxdxmkeHjZCrXBHaQak5QlWfm55700AYZtHY/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
